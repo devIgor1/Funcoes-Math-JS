@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IMR</title>
+  <style>
+      body {
+        text-align: center;
+        font-family: arial;
+        background-color: yellow;
+      }
+
+      table {
+        background-color: white;
+        border-collapse: collapse;
+        width: 100%;
+      }
+      td,
+      th{
+        border: 1px solid black;
+        text-align: left;
+        padding: 7px;
+      }
+      #botao{color: white;
+        cursor: pointer;
+        padding: 10px;
+        color: black;
+        background-color: white;
+        border-radius: 10px;
+        outline: none;
+      }
+      #botao:hover{
+        background-color: white;
+      }
+      #resultado{
+        background-color: black;
+        color:white;
+        padding: 3px;
+        border-radius: 10px;
+      }
+  </style>
+</head>
+<body>
+  <!--O objeto Javascript Math permite executar tarefas matemáticas em números-->
+<h1>Igor Moraes Rocha</h1>
+<h3>Algumas Funções Math em JavaScript</h3>
+<table>
+  <tr class="Linhas">
+    <th>Comando: </th>
+    <th>Função: </th>
+  </tr>
+  <tr class="Linhas">
+    <td>Math.round(x): </td>
+    <td>Retorna o valor de x arredondado</td>
+  </tr>
+  <tr class="Linhas">
+    <td>Math.abs(x): </td>
+    <td>Retorna o módulo, ou valor absoluto, de um número (|x|).</td>
+    </tr>
+  <tr class="Linhas">
+    <td>Math.sqrt(x): </td>
+    <td>Retorna a raiz quadrada positiva de um número (x).</td>
+  </tr>
+  <tr class="Linhas">
+    <td>Math.ceil(x): </td>
+    <td> Retorna o valor de x arrendondado para cima</td>
+  </tr>
+    <tr class="Linhas">
+      <td>Math.floor(x): </td>
+      <td>Retorna o valor de x arrendondado para baixo</td>
+  </tr>
+  <tr class="Linhas">
+    <td>Math.random(): </td>
+    <td>Retorna um número aleatório entre 0 e 1 </td>
+  </tr>
+  <tr class="Linhas">
+    <td>Math.pow(x,y): </td>
+    <td>Retorna o valor de x à potência de y </td>
+  </tr>
+
+</table>
+<br>
+<br>
+<button id="botao" onclick="minhafuncao()">TESTAR</button>
+<br></br>
+<p id="resultado">Resultado</p>
+<script>
+  function minhafuncao(){
+    document.getElementById('resultado').innerHTML = Math.round(5.7)
+
+  }
+</script>
+</body>
+</html>
+
+
+
+
